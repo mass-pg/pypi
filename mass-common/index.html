@@ -56,28 +56,28 @@
   <body>
    <div class="container">
     <section class="header">
-     transformers
+     mass-common
      <span>
      </span>
      <span id='latest-version' class="version">
-      3.0
+      1.7.0
      </span>
     </section>
-    <pre id='installdanger' hidden><button class="danger-button" disabled>DANGER ! A higher version of <i>transformers</i> already exists on PyPi</button></pre>
-    <pre id='installcmd'><code>pip install transformers --extra-index-url https://astariul.github.io/github-hosted-pypi/</code></pre>
-    <a href="git+https://github.com/huggingface/transformers@v3.0.2#egg=transformers-3.0">
+    <pre id='installdanger' hidden><button class="danger-button" disabled>DANGER ! A higher version of <i>mass-common</i> already exists on PyPi</button></pre>
+    <pre id='installcmd'><code>pip install mass-common --extra-index-url https://astariul.github.io/github-hosted-pypi/</code></pre>
+    <a href="git+https://github.com/mass-common/mass-common@v1.7.0#egg=mass-common-1.7.0">
     </a>
     <hr/>
     <div class="row">
      <div class="three columns">
-      <button onclick="location.href='https://github.com/huggingface/transformers'">
+      <button onclick="location.href='https://github.com/mass-pg/mass-common'">
        Homepage
       </button>
       <p class="elem">
        <b>
         Author :
        </b>
-       Nicolas Remond
+       mass-pg
       </p>
      </div>
     <div class="nine columns">
@@ -85,11 +85,7 @@
       Description
      </h6>
      <p>
-      This is a (safe) example of a package vulnerable to supply chain attacks.
-      <br>
-      Here we registered a private package called <i>transformers</i>. But another package with the exact same name and a higher version is registered in the public PyPi index. Running the install command would install the package registered there (which might be malicious), not my private package as intended.
-      <br>
-      A warning is displayed instead of the install command.
+      Common code used between repositories
      </p>
     </div>
    </div>
@@ -102,7 +98,7 @@
 
     $(document).ready(function(){
       var this_vers = document.getElementById('latest-version').textContent.trim();
-      check_supply_chain_attack("transformers", this_vers, warn_unsafe);
+      check_supply_chain_attack("mass-common", this_vers, warn_unsafe);
     });
   </script>
  </body>
