@@ -78,29 +78,29 @@
 <body>
   <div class="container">
     <section class="header">
-      _package_name
+      private-hello
       <span>
       </span>
       <span id='latest-version' class="version">
-        _version
+        0.4.5
       </span>
     </section>
     <pre id='installdanger'
-      hidden><button class="danger-button" disabled>DANGER ! A higher version of <i>_package_name</i> already exists on PyPi</button></pre>
-    <pre id='installcmd'><code>pip install _package_name --extra-index-url https://mass-pg.github.io/pypi/</code></pre>
-    <a href="_link">
+      hidden><button class="danger-button" disabled>DANGER ! A higher version of <i>private-hello</i> already exists on PyPi</button></pre>
+    <pre id='installcmd'><code>pip install private-hello --extra-index-url https://mass-pg.github.io/pypi/</code></pre>
+    <a href="git+https://github.com/astariul/private-hello.git#egg=private-hello-0.4.5">
     </a>
     <hr />
     <div class="row">
       <div class="three columns">
-        <button onclick="location.href='_homepage'">
+        <button onclick="location.href='https://github.com/astariul/private-hello'">
           Homepage
         </button>
         <p class="elem">
           <b>
             Author :
           </b>
-          _author
+          Nicolas Remond
         </p>
       </div>
       <div class="nine columns">
@@ -108,7 +108,11 @@
           Description
         </h6>
         <p>
-          _long_description
+          This is a private, github-hosted python package for test. You can try to install it with the given command,
+          but Github will ask for authentication, and if you don't have access to the repository with your Github
+          account, you will not be able to download it. So even if the PyPi index is public, private packages are still
+          private.
+
         </p>
       </div>
     </div>
@@ -121,7 +125,7 @@
 
     $(document).ready(function () {
       var this_vers = document.getElementById('latest-version').textContent.trim();
-      check_supply_chain_attack("_package_name", this_vers, warn_unsafe);
+      check_supply_chain_attack("private-hello", this_vers, warn_unsafe);
     });
   </script>
 </body>
