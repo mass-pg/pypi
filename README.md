@@ -1,3 +1,5 @@
+# [mass-pg PyPi](https://mass-pg.github.io/pypi/)
+
 <h1 align="center">github-hosted-pypi</h1>
 
 <p align="center">
@@ -38,7 +40,7 @@ _While the PyPi index is public, private packages indexed here are kept private 
 
 ## Try it !
 
-Visit [astariul.github.io/github-hosted-pypi/](http://astariul.github.io/github-hosted-pypi/) and try to install packages indexed there !
+Visit [mass-pg.github.io/pypi/](https://mass-pg.github.io/pypi/) and try to install packages indexed there !
 
 ---
 
